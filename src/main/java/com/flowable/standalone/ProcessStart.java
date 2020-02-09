@@ -17,7 +17,7 @@ public class ProcessStart {
         UserInteraction pp = new UserInteraction();
         HolidayBookProcess hbp = new HolidayBookProcess(pp);
 
-        Deployment deploy = ps.createDeployment("holiday-request.bpmn");
+        Deployment deploy = ps.createDeployment("processes/holiday-request.bpmn");
         ProcessDefinition processDefinition = ps.getProcessDefinition(deploy.getId());
         System.out.println(processDefinition.getName());
 
